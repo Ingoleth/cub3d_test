@@ -150,6 +150,7 @@ int game_logic(gm_inf *game_info)
 		if (game_info-> stage == 3)
 		{
 			mlx_clear_window(game_info->mlx_ptr, game_info->win_ptr);
+			mlx_string_put(game_info->mlx_ptr, game_info->win_ptr, 350, 550, WHITE, "Felicidades! :)");
 			mlx_put_image_to_window(game_info->mlx_ptr, game_info->win_ptr, game_info->cake->img, 300, 300);
 		}
 		render_animated_image(100, 300, &game_info->pacman, game_info);
